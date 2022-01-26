@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="style_test.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PMS</title>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+        <a href="#">
+        <span class="iconify" data-icon="fluent:share-screen-person-p-24-filled" style="color: white;" data-width="50" data-height="50"></span>
+      <span class="logo_name" style="vertical-align: super;font-size: xxx-large;">PMS</span></a>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Attendance Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="meetings.html" >
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Meetings</span>
+          </a>
+        </li>
+        <li>
+          <a href="project.html">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="leave.html" class="active">
+            <i class='bx bx-walk' ></i>
+            <span class="links_name">Apply Leave</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav class="top-bar">
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      
+      <a class="navbar-brand" href="/">
+        <div class="notification-image">
+          <span class="iconify" data-icon="mdi:bell-circle" style="color: black;" data-width="40" data-height="50"></span>
+        </div>
+  </a>
+      
+      <a class="navbar-brand" href="/">
+            <div class="myprofile-image">
+                  <img src="profile.jpg" class="img-fluid" width="40" height="50">
+            </div>
+      </a>
+
+      
+    </nav>
+
+    <div class="home-content">
+     
+
+    <div>
+      <script type="text/javascript" src="https://form.jotform.com/jsform/220250967692461">
+
+   </script></div>
+</div>
+
+  </section>
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+ let sidebarBtn = document.querySelector(".sidebarBtn");
+ sidebarBtn.onclick = function() {
+   sidebar.classList.toggle("active");
+   if(sidebar.classList.contains("active")){
+   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+ }else
+   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+ }
+  </script>
+</body>
+</html>
+
+
+
